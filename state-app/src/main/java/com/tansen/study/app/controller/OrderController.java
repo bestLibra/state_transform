@@ -34,7 +34,7 @@ public class OrderController {
      * @version 1.0.0
      */
     @RequestMapping(value = "/audit", method = RequestMethod.GET)
-    public String confirm(String orderNo) {
+    public String audit(String orderNo) {
         return orderService.audit(orderNo);
     }
 
